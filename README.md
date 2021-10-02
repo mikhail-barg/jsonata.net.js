@@ -8,7 +8,7 @@ The wrapper uses [Jint](https://github.com/sebastienros/jint) JS Engine for C#.
 Because this package does C#-JS interop, it's expected to be rather slow. I'm working on C#-native implementation of the engine.
 
 [**Usage**](https://github.com/mikhail-barg/jsonata.net.js/blob/3563e702102cf675a63a048aaa5c9bb7c0fafc70/src/Jsonata.Net.TestApp/Program.cs#L12)
-```
+```c#
 using Jsonata.Net.Js;
 ...
 JsonataEngine jsonata = new JsonataEngine();
