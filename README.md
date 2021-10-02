@@ -1,4 +1,4 @@
-# jsonata.net.js
+# JSONata.Net.Js
 .Net implementation of JSONata query and transformation language (http://jsonata.org)
 
 This is a C# wrapper over the `jsonata-es5.min.js` imported from [jsonata-c](https://github.com/qlyoung/jsonata-c/blob/master/src/jsonata-es5.min.js) repo by [qlyoung](https://github.com/qlyoung).
