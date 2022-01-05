@@ -14,9 +14,9 @@
     <Authors>Mikhail Barg</Authors>
     <Description>JS-based JSONata engine for .Net</Description>
     <Copyright>Copyright © 2021 Mikhail Barg</Copyright>
-    <PackageLicenseFile>../../LICENSE</PackageLicenseFile>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <PackageProjectUrl>https://github.com/mikhail-barg/jsonata.net.js</PackageProjectUrl>
-    <PackageIcon>../../jsonata-button.png</PackageIcon>
+    <PackageIcon>jsonata-button.png</PackageIcon>
     <PackageIconUrl />
     <PackageTags>jsonata</PackageTags>
     <IncludeSymbols>true</IncludeSymbols>
@@ -31,9 +31,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <EmbeddedResource Include="../../jsonata-c/src/jsonata-es5.min.js" Link="jsonata-es5.min.js" />
+    <None Include="..\..\jsonata-button.png" Pack="true" PackagePath="" />
+    <None Include="..\..\LICENSE" Pack="true" PackagePath="" />
   </ItemGroup>
 
+  <ItemGroup>
+    <EmbeddedResource Include="../../jsonata-c/src/jsonata-es5.min.js" Link="jsonata-es5.min.js" />
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Jint" Version="2.11.58" />
@@ -41,7 +45,7 @@
 
   <ItemGroup>
     <!-- see https://github.com/dotnet/sourcelink/blob/master/docs/README.md#continuousintegrationbuild -->
-    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0" PrivateAssets="All"/>
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0" PrivateAssets="All" />
   </ItemGroup>
 
 </Project>
